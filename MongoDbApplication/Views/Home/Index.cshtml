@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    @foreach (var item in Model)
+    {
+        @Html.Action("CharacterPartial", new { character = item})
+    }
+</div>
