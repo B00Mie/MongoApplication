@@ -9,5 +9,14 @@
     <div class="card-body">
         <h5 class="card-title">@character.Name</h5>
         <h6 class="card-subtitle mb-2 text-muted">@character.Class</h6>
+        <br />
+        <h6 class="card-subtitle mb-2">Inventory @(character.Inventory.Items.Count)/@character.Inventory.Capacity:</h6>
+
+        <ul class="list-group list-group-flush">
+            @foreach (var item in character.Inventory.Items)
+            {
+                <li class="list-group-item">@item.ItemName</li>
+            }
+        </ul>
     </div>
 </div>
