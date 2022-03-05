@@ -3,7 +3,7 @@
     padding-bottom: 20px;*/
 }
 div{
-   display:inline;
+   display:inline-block;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,4 +24,8 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.character-card{
+    margin:5px;
 }
