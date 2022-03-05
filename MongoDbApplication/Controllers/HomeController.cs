@@ -39,5 +39,13 @@ namespace MongoDbApplication.Controllers
             
             return PartialView(character);
         }
+
+
+        public ActionResult AddCharacter(Character character)
+        {
+            MongoDbContext.CurrDatabase.GetCollection<Character>("characters").InsertOne(character);
+
+            return RedirectToAction("Index");
+        }
     }
 }

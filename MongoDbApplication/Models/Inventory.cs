@@ -7,7 +7,7 @@ namespace MongoDbApplication.Models
 {
     public class Inventory
     {
-        public int Capacity { get; set; }
-        public List<Item> Items { get; set; }
+        public int Capacity { get; set; } = 0;
+        public List<Item> Items { get; set; } = new List<Item>();
     }
 }

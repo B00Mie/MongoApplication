@@ -12,7 +12,12 @@ namespace MongoDbApplication.Models
         public string Name { get; set; }
         public string Class { get; set; }
 
-        public Inventory Inventory { get; set; }
+        //public int Strength { get; set; }
+        //public int Wits { get; set; }
+        //public int Dexterity { get; set; }
+        //public int Empathy { get; set; }
+
+        public Inventory Inventory { get; set; } = new Inventory();
 
     }
 }
