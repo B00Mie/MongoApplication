@@ -19,6 +19,9 @@ namespace MongoDbApplication
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/Scripts/custom").Include(
+                        "~/Scripts/custom/script.js"));
+
             bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 

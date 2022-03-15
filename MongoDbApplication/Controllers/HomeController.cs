@@ -41,8 +41,9 @@ namespace MongoDbApplication.Controllers
         }
 
 
-        public ActionResult AddCharacter(Character character)
+        public ActionResult AddCharacter(string charName, string charClass, int strength, int dex, int wits, int empathy)
         {
+            Character character = new Character(charName, charClass, strength, dex,wits,empathy);
             MongoDbContext.CurrDatabase.GetCollection<Character>("characters").InsertOne(character);
 
             return RedirectToAction("Index");
